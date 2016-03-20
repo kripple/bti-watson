@@ -1,1 +1,2 @@
 github "watson-developer-cloud/ios-sdk"
+github "Alamofire/Alamofire" ~> 3.0

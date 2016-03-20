@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4957379C1C9E03300036C086 /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4957379B1C9E03300036C086 /* Reddit.swift */; };
 		49C076241C978387004EBF6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C076231C978387004EBF6B /* AppDelegate.swift */; };
 		49C076261C978387004EBF6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C076251C978387004EBF6B /* ViewController.swift */; };
 		49C076291C978387004EBF6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C076271C978387004EBF6B /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4957379B1C9E03300036C086 /* Reddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reddit.swift; sourceTree = "<group>"; };
 		49C076201C978387004EBF6B /* ios-quickstart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-quickstart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C076231C978387004EBF6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C076251C978387004EBF6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				49C0762A1C978387004EBF6B /* Assets.xcassets */,
 				49C0762C1C978387004EBF6B /* LaunchScreen.storyboard */,
 				49C0762F1C978387004EBF6B /* Info.plist */,
+				4957379B1C9E03300036C086 /* Reddit.swift */,
 			);
 			path = "ios-quickstart";
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C076261C978387004EBF6B /* ViewController.swift in Sources */,
+				4957379C1C9E03300036C086 /* Reddit.swift in Sources */,
 				49C076241C978387004EBF6B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,6 +566,7 @@
 				49C0764A1C978387004EBF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49C0764B1C978387004EBF6B /* Build configuration list for PBXNativeTarget "ios-quickstartTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +575,7 @@
 				49C0764D1C978387004EBF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49C0764E1C978387004EBF6B /* Build configuration list for PBXNativeTarget "ios-quickstartUITests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +584,7 @@
 				49C076501C978387004EBF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -49,6 +49,8 @@ xcuserdata/
 # Carthage/Checkouts
 
 Carthage/Build
+Carthage/
+ios-app/Carthage/
 
 # fastlane
 #
