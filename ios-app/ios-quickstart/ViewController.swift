@@ -14,9 +14,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let r = Reddit()
+        let _ = r.getPosts("problems")
         
         let tts = TextToSpeech(username: "5fd5ef73-28a2-4b85-a7bd-b6d1c51c3a39", password: "sFYpVkqvTIc0")
-        tts.synthesize("All the problems of the world could be settled easily if men were only willing to think.") {
+        tts.synthesize("Text") {
             
             data, error in
             
