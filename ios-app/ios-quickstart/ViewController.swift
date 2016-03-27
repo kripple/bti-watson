@@ -17,26 +17,27 @@ class ViewController: UIViewController {
         let r = Reddit()
         let _ = r.getPosts("problems")
         
-        let tts = TextToSpeech(username: "5fd5ef73-28a2-4b85-a7bd-b6d1c51c3a39", password: "sFYpVkqvTIc0")
-        tts.synthesize("Text") {
-            
-            data, error in
-            
+        let ttsHandler:(NSData?, NSError?)->Void = {
+            (data:NSData?, error:NSError?) -> Void in
             if let audio = data {
-                
                 do {
                     self.player = try AVAudioPlayer(data: audio)
                     self.player!.play()
                 } catch {
                     print("Couldn't create player.")
                 }
-                
             } else {
                 print(error)
             }
-            
         }
         
+        let samplePositive = "I am super happy today, everything is perfect and amazing! " +
+                             "The sun is shining and birds are chirping, I just want to skip " +
+                             "down the street!"
+        WatsonUtil.getSentiment(samplePositive, completion: {(result) in
+            print(result)
+            WatsonUtil.textToSpeech(result!, completion: ttsHandler)
+        }) 
     }
 
     override func didReceiveMemoryWarning() {

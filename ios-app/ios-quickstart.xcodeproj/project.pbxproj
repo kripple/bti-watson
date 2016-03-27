@@ -29,6 +29,7 @@
 		49C076651C978874004EBF6B /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49C076571C97884E004EBF6B /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49C076661C978874004EBF6B /* WatsonDeveloperCloud.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49C076581C97884E004EBF6B /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49C076671C978874004EBF6B /* XCGLogger.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49C076591C97884E004EBF6B /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7406B621CA7FF5300CE3C6F /* WatsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7406B611CA7FF5300CE3C6F /* WatsonUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		49C076571C97884E004EBF6B /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		49C076581C97884E004EBF6B /* WatsonDeveloperCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatsonDeveloperCloud.framework; path = Carthage/Build/iOS/WatsonDeveloperCloud.framework; sourceTree = "<group>"; };
 		49C076591C97884E004EBF6B /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		A7406B611CA7FF5300CE3C6F /* WatsonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				49C0762C1C978387004EBF6B /* LaunchScreen.storyboard */,
 				49C0762F1C978387004EBF6B /* Info.plist */,
 				4957379B1C9E03300036C086 /* Reddit.swift */,
+				A7406B611CA7FF5300CE3C6F /* WatsonUtil.swift */,
 			);
 			path = "ios-quickstart";
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C076261C978387004EBF6B /* ViewController.swift in Sources */,
+				A7406B621CA7FF5300CE3C6F /* WatsonUtil.swift in Sources */,
 				4957379C1C9E03300036C086 /* Reddit.swift in Sources */,
 				49C076241C978387004EBF6B /* AppDelegate.swift in Sources */,
 			);
