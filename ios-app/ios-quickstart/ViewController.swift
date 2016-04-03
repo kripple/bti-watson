@@ -14,11 +14,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let r = Reddit()
-        let _ = r.getPosts("problems")
         
-        let ttsHandler:(NSData?, NSError?)->Void = {
-            (data:NSData?, error:NSError?) -> Void in
+        let ttsHandler:(NSData?, NSError?)->Void = {data,error in
             if let audio = data {
                 do {
                     self.player = try AVAudioPlayer(data: audio)
@@ -31,12 +28,15 @@ class ViewController: UIViewController {
             }
         }
         
-        let samplePositive = "I am super happy today, everything is perfect and amazing! " +
-                             "The sun is shining and birds are chirping, I just want to skip " +
-                             "down the street!"
-        WatsonUtil.getSentiment(samplePositive, completion: {(result) in
-            print(result)
-            WatsonUtil.textToSpeech(result!, completion: ttsHandler)
+        let r = Reddit()
+        let _ = r.getPosts("cats", completion: {(posts) in
+            
+            //right now just gets the title of the first post and says positive or negative
+            WatsonUtil.getRedditSentiment(posts!, completion: {(result) in
+                print(result)
+                WatsonUtil.textToSpeech(result!, completion: ttsHandler)
+        
+            })
         }) 
     }
 

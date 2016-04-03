@@ -25,6 +25,20 @@ class WatsonUtil {
         }
     }
     
+    static func getRedditSentiment(posts : NSArray, completion: (result: String?) -> Void) -> Void {
+        let instance = AlchemyLanguage(apiKey: ALCHEMY_API_KEY)
+        let redditEntry : NSMutableDictionary = posts[0] as! NSMutableDictionary
+        //TODO just getting the sentiment from the title of one of the posts to start for now...
+        let title = redditEntry["data"]!["title"] as! String
+        print("title: " + title)
+        
+        instance.getSentiment(requestType: .Text, html: nil, url: nil, text: title) { (error, returnValue) -> Void in
+            if let sentiment = returnValue.docSentiment {
+                completion(result:sentiment.type)
+            }
+        }
+    }
+    
     static func textToSpeech(inputText: String, completion: (data: NSData?, error: NSError?) -> Void) -> Void {
         let tts = TextToSpeech(username: TTS_USERNAME, password: TTS_PASSWORD)
         
