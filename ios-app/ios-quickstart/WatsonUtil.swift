@@ -39,6 +39,17 @@ class WatsonUtil {
         }
     }
     
+    static func getSentimentFromUrl(url: String, completion: (result: String?) -> Void) ->
+        Void {
+            
+        let instance = AlchemyLanguage(apiKey: ALCHEMY_API_KEY)
+        instance.getSentiment(requestType: .URL, html: nil, url: url, text: nil) { (error,returnValue) -> Void in
+            if let sentiment = returnValue.docSentiment {
+                completion(result:sentiment.type)
+            }
+        }
+    }
+    
     static func textToSpeech(inputText: String, completion: (data: NSData?, error: NSError?) -> Void) -> Void {
         let tts = TextToSpeech(username: TTS_USERNAME, password: TTS_PASSWORD)
         

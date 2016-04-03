@@ -28,16 +28,22 @@ class ViewController: UIViewController {
             }
         }
         
-        let r = Reddit()
-        let _ = r.getPosts("cats", completion: {(posts) in
-            
-            //right now just gets the title of the first post and says positive or negative
-            WatsonUtil.getRedditSentiment(posts!, completion: {(result) in
-                print(result)
-                WatsonUtil.textToSpeech(result!, completion: ttsHandler)
+//        let r = Reddit()
+//        let _ = r.getPosts("cats", completion: {(posts) in
+//            
+//            //right now just gets the title of the first post and says positive or negative
+//            WatsonUtil.getRedditSentiment(posts!, completion: {(result) in
+//                print(result)
+//                WatsonUtil.textToSpeech(result!, completion: ttsHandler)
+//        
+//            })
+//        })
         
-            })
-        }) 
+        WatsonUtil.getSentimentFromUrl("https://www.reddit.com/search?q=donald+trump&restrict_sr=&sort=top&t=day&sort=top&t=day", completion: {(result) in
+            print(result)
+            WatsonUtil.textToSpeech(result!, completion: ttsHandler) 
+        })
+
     }
 
     override func didReceiveMemoryWarning() {
