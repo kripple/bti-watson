@@ -41,7 +41,12 @@ class ViewController: UIViewController {
         
         WatsonUtil.getSentimentFromUrl("https://www.reddit.com/search?q=donald+trump&restrict_sr=&sort=top&t=day&sort=top&t=day", completion: {(result) in
             print(result)
-            WatsonUtil.textToSpeech(result!, completion: ttsHandler) 
+            WatsonUtil.textToSpeech(result!, completion: ttsHandler)
+        })
+    
+        WatsonUtil.classify("is it hot outside?", completion: {(result) in
+            print(result)
+            WatsonUtil.textToSpeech(result, completion: ttsHandler)
         })
 
     }
