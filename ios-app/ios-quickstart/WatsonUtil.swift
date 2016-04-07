@@ -16,7 +16,10 @@ class WatsonUtil {
     static var ALCHEMY_API_KEY = "91bde65af203849c82d0857bece3c05de88e56a0"
     static var CLASSIFIER_USERNAME = "c7a820d9-5dda-4aab-809b-6377aa5b780e"
     static var CLASSIFIER_PASSWORD = "M85qL8JciAW6"
-    static var CLASSIFIER_ID = "cd6394x53-nlc-870"
+    //weather classifier
+    //static var CLASSIFIER_ID = "cd6394x53-nlc-870"
+    //positive negative classifier
+    static var CLASSIFIER_ID = "cd6374x52-nlc-1744"
     
     static func getSentiment(inputText : String, completion: (result: String?) -> Void) -> Void {
         let instance = AlchemyLanguage(apiKey: ALCHEMY_API_KEY)
@@ -58,7 +61,7 @@ class WatsonUtil {
         
         let bundle = NSBundle.mainBundle()
         
-        let trainerURL = bundle.URLForResource("weather_data_train", withExtension: "csv")
+        let trainerURL = bundle.URLForResource("sentiment_data_train", withExtension: "csv")
         let trainerMetaURL = bundle.URLForResource("training_meta", withExtension: "txt")
         
         classifierService.createClassifier(trainerMetaURL!, trainerURL: trainerURL!) {

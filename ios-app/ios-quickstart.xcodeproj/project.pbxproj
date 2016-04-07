@@ -32,6 +32,7 @@
 		A7406B621CA7FF5300CE3C6F /* WatsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7406B611CA7FF5300CE3C6F /* WatsonUtil.swift */; };
 		A75A1BA61CB34AF900B351D5 /* training_meta.txt in Resources */ = {isa = PBXBuildFile; fileRef = A75A1BA41CB34AF900B351D5 /* training_meta.txt */; };
 		A75A1BA71CB34AF900B351D5 /* weather_data_train.csv in Resources */ = {isa = PBXBuildFile; fileRef = A75A1BA51CB34AF900B351D5 /* weather_data_train.csv */; };
+		A7E7F4F01CB5DFC5005B1AE5 /* sentiment_data_train.csv in Resources */ = {isa = PBXBuildFile; fileRef = A7E7F4EF1CB5DFC5005B1AE5 /* sentiment_data_train.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		A7406B611CA7FF5300CE3C6F /* WatsonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonUtil.swift; sourceTree = "<group>"; };
 		A75A1BA41CB34AF900B351D5 /* training_meta.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = training_meta.txt; sourceTree = "<group>"; };
 		A75A1BA51CB34AF900B351D5 /* weather_data_train.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = weather_data_train.csv; sourceTree = "<group>"; };
+		A7E7F4EF1CB5DFC5005B1AE5 /* sentiment_data_train.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sentiment_data_train.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				A75A1BA51CB34AF900B351D5 /* weather_data_train.csv */,
 				49C076231C978387004EBF6B /* AppDelegate.swift */,
 				49C076251C978387004EBF6B /* ViewController.swift */,
+				A7E7F4EF1CB5DFC5005B1AE5 /* sentiment_data_train.csv */,
 				49C076271C978387004EBF6B /* Main.storyboard */,
 				49C0762A1C978387004EBF6B /* Assets.xcassets */,
 				49C0762C1C978387004EBF6B /* LaunchScreen.storyboard */,
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C0762E1C978387004EBF6B /* LaunchScreen.storyboard in Resources */,
+				A7E7F4F01CB5DFC5005B1AE5 /* sentiment_data_train.csv in Resources */,
 				A75A1BA61CB34AF900B351D5 /* training_meta.txt in Resources */,
 				49C0762B1C978387004EBF6B /* Assets.xcassets in Resources */,
 				49C076291C978387004EBF6B /* Main.storyboard in Resources */,

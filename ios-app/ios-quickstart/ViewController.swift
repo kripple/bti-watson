@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             WatsonUtil.textToSpeech(result!, completion: ttsHandler)
         })
     
-        WatsonUtil.classify("is it hot outside?", completion: {(result) in
+        WatsonUtil.classify("I am super happy today", completion: {(result) in
             print(result)
             WatsonUtil.textToSpeech(result, completion: ttsHandler)
         })
