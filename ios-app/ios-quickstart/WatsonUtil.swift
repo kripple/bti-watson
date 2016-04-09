@@ -110,7 +110,7 @@ class WatsonUtil {
         print("UUID:")
         //let dialogName = NSUUID().UUIDString
 
-        service.createDialog("pizza-watson-dialog-10006", fileURL: dialogPath!) { (dialogId, error) -> Void in
+        service.createDialog("pizza-watson-dialog-8", fileURL: dialogPath!) { (dialogId, error) -> Void in
             print("dialog id:")
             print(dialogId)
             print("error:")
@@ -119,6 +119,9 @@ class WatsonUtil {
             service.converse(dialogId!) { response, error in
                 print("response:")
                 print(response!.response![0])
+                
+                service.deleteDialog(dialogId!){ error in
+                }
             }
             print("conversation is over")
         }
