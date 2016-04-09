@@ -39,6 +39,9 @@ class ViewController: UIViewController {
 //            })
 //        })
         
+        WatsonUtil.createDialog()
+
+        /*
         WatsonUtil.getSentimentFromUrl("https://www.reddit.com/search?q=donald+trump&restrict_sr=&sort=top&t=day&sort=top&t=day", completion: {(result) in
             print(result)
             WatsonUtil.textToSpeech(result!, completion: ttsHandler)
@@ -47,8 +50,8 @@ class ViewController: UIViewController {
         WatsonUtil.classify("I am super happy today", completion: {(result) in
             print(result)
             WatsonUtil.textToSpeech(result, completion: ttsHandler)
-        })
-
+        })*/
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -100,14 +100,27 @@ class WatsonUtil {
     }
     
     static func createDialog() {
-        let service = Dialog(username: DIALOG_USERNAME, password: DIALOG_PASSWORD)
+        let service = Dialog(username: "601ab5c2-961d-4a7b-9db9-7abc51114b82", password: "ILzm50PMotMo")
         
         let bundle = NSBundle.mainBundle()
-        
         let dialogPath = bundle.URLForResource("pizza_sample", withExtension: "xml")
-        
-        service.createDialog("pizza-dialog-watson", fileURL: dialogPath!) { (dialogId, error) -> Void in
+        print("dialog path:")
+        print(dialogPath);
+
+        print("UUID:")
+        //let dialogName = NSUUID().UUIDString
+
+        service.createDialog("pizza-watson-dialog-10006", fileURL: dialogPath!) { (dialogId, error) -> Void in
+            print("dialog id:")
             print(dialogId)
+            print("error:")
+            print(error)
+            
+            service.converse(dialogId!) { response, error in
+                print("response:")
+                print(response!.response![0])
+            }
+            print("conversation is over")
         }
     }
     
