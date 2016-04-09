@@ -21,6 +21,10 @@ class WatsonUtil {
     //positive negative classifier
     static var CLASSIFIER_ID = "cd6374x52-nlc-1744"
     
+    static var DIALOG_PASSWORD = "uH9DBGCXyk5B"
+    static var DIALOG_USERNAME =  "3213c95d-8a51-407f-9e87-0160151c5f1a"
+    static var PIZZA_DIALOG_ID = "816c3650-315d-479a-9317-5d0e7d24f406"
+    
     static func getSentiment(inputText : String, completion: (result: String?) -> Void) -> Void {
         let instance = AlchemyLanguage(apiKey: ALCHEMY_API_KEY)
         
@@ -94,5 +98,19 @@ class WatsonUtil {
                 completion(data: data, error: error)
         }
     }
+    
+    static func createDialog() {
+        let service = Dialog(username: DIALOG_USERNAME, password: DIALOG_PASSWORD)
+        
+        let bundle = NSBundle.mainBundle()
+        
+        let dialogPath = bundle.URLForResource("pizza_sample", withExtension: "xml")
+        
+        service.createDialog("pizza-dialog-watson", fileURL: dialogPath!) { (dialogId, error) -> Void in
+            print(dialogId)
+        }
+    }
+    
+    
     
 }

@@ -29,6 +29,7 @@
 		49C076651C978874004EBF6B /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49C076571C97884E004EBF6B /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49C076661C978874004EBF6B /* WatsonDeveloperCloud.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49C076581C97884E004EBF6B /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49C076671C978874004EBF6B /* XCGLogger.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49C076591C97884E004EBF6B /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A713B6F91CB93F0300A17487 /* pizza_sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = A713B6F81CB93F0300A17487 /* pizza_sample.xml */; };
 		A7406B621CA7FF5300CE3C6F /* WatsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7406B611CA7FF5300CE3C6F /* WatsonUtil.swift */; };
 		A75A1BA61CB34AF900B351D5 /* training_meta.txt in Resources */ = {isa = PBXBuildFile; fileRef = A75A1BA41CB34AF900B351D5 /* training_meta.txt */; };
 		A75A1BA71CB34AF900B351D5 /* weather_data_train.csv in Resources */ = {isa = PBXBuildFile; fileRef = A75A1BA51CB34AF900B351D5 /* weather_data_train.csv */; };
@@ -93,6 +94,7 @@
 		49C076571C97884E004EBF6B /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		49C076581C97884E004EBF6B /* WatsonDeveloperCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatsonDeveloperCloud.framework; path = Carthage/Build/iOS/WatsonDeveloperCloud.framework; sourceTree = "<group>"; };
 		49C076591C97884E004EBF6B /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		A713B6F81CB93F0300A17487 /* pizza_sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pizza_sample.xml; sourceTree = "<group>"; };
 		A7406B611CA7FF5300CE3C6F /* WatsonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonUtil.swift; sourceTree = "<group>"; };
 		A75A1BA41CB34AF900B351D5 /* training_meta.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = training_meta.txt; sourceTree = "<group>"; };
 		A75A1BA51CB34AF900B351D5 /* weather_data_train.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = weather_data_train.csv; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				49C076251C978387004EBF6B /* ViewController.swift */,
 				A7E7F4EF1CB5DFC5005B1AE5 /* sentiment_data_train.csv */,
 				49C076271C978387004EBF6B /* Main.storyboard */,
+				A713B6F81CB93F0300A17487 /* pizza_sample.xml */,
 				49C0762A1C978387004EBF6B /* Assets.xcassets */,
 				49C0762C1C978387004EBF6B /* LaunchScreen.storyboard */,
 				49C0762F1C978387004EBF6B /* Info.plist */,
@@ -308,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A713B6F91CB93F0300A17487 /* pizza_sample.xml in Resources */,
 				49C0762E1C978387004EBF6B /* LaunchScreen.storyboard in Resources */,
 				A7E7F4F01CB5DFC5005B1AE5 /* sentiment_data_train.csv in Resources */,
 				A75A1BA61CB34AF900B351D5 /* training_meta.txt in Resources */,
